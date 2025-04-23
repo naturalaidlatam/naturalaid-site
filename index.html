@@ -23,20 +23,16 @@
       background: linear-gradient(90deg, #a8d5ba, #d4eac8);
       padding: 1.5rem;
       text-align: center;
-      position: relative;
+    }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
     }
 
     .logo {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      height: 50px;
-    }
-
-    .logo-right {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
       height: 50px;
     }
 
@@ -48,6 +44,7 @@
     header p {
       font-size: 1rem;
       color: #2f4f4f;
+      margin-top: 0.5rem;
     }
 
     nav {
@@ -99,9 +96,10 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="NaturalAid Logo" class="logo">
-    <img src="logo.png" alt="NaturalAid Logo" class="logo-right">
-    <h1>NaturalAid</h1>
+    <div class="header-title">
+      <img src="logo.png" alt="NaturalAid Logo" class="logo">
+      <h1>NaturalAid</h1>
+    </div>
     <p>Bienestar natural para cuerpo y mente</p>
     <nav>
       <a href="#sobre-mi">Sobre mí</a>
@@ -128,7 +126,7 @@
   <section id="agendar">
     <h2>Agendar una consulta</h2>
     <div class="calendly-container">
-      <iframe src="https://calendly.com/tuusuario/30min" allowfullscreen></iframe>
+      <iframe src="https://calendly.com/naturalaidlatam/30min" allowfullscreen></iframe>
     </div>
   </section>
 
