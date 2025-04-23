@@ -30,6 +30,7 @@
       align-items: center;
       justify-content: center;
       gap: 1rem;
+      flex-wrap: wrap;
     }
 
     .logo {
@@ -49,10 +50,13 @@
 
     nav {
       margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
     }
 
     nav a {
-      margin: 0 1rem;
       color: #2f4f4f;
       text-decoration: none;
       font-weight: 600;
@@ -91,6 +95,24 @@
       padding: 1rem;
       font-size: 0.9rem;
       color: #2f4f4f;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .logo {
+        height: 40px;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+
+      iframe {
+        height: 600px;
+      }
     }
   </style>
 </head>
